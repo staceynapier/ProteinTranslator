@@ -8,15 +8,21 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      translation: ''
+      splitString: []
     }
+    this.splitInput = this.splitInput.bind(this);
+  }
+
+  splitInput(input) {
+    const splitString = input.match(/.{1,3}/g);
+    this.setState({splitString: splitString});
   }
 
   render() {
     return (
       <main>
         <section>
-          <InputContainer translate={this.translate}/>
+          <InputContainer splitInput={this.splitInput}/>
         </section>
 
         <section>

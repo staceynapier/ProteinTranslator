@@ -17,7 +17,7 @@ class InputContainer extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    this.props.translate(this.state.input)
+    this.props.splitInput(this.state.input)
   }
 
   render() {
