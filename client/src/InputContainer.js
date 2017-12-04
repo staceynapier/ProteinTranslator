@@ -17,8 +17,7 @@ class InputContainer extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    console.log(this.state);
-    // this.setState({input: 'value'})
+    this.props.translate(this.state.input)
   }
 
   render() {

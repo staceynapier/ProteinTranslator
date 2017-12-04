@@ -4,11 +4,19 @@ import InputContainer from './InputContainer.js';
 import TranslationContainer from './TranslationContainer.js';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      translation: ''
+    }
+  }
+
   render() {
     return (
       <main>
         <section>
-          <InputContainer />
+          <InputContainer translate={this.translate}/>
         </section>
 
         <section>
