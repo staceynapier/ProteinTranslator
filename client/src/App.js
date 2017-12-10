@@ -49,9 +49,10 @@ class App extends Component {
     if (input.length === 0) {
       return null
     } else {
+
     const splitString = input.match(/.{1,3}/g);
     this.checkForStop(splitString);
-  }
+    }
   }
 
   render() {

@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+  color: #FFF;
+  background-color: #5e557a;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+form {
+  font-size: 2em;
+  text-align: center;
+}
+
+input {
+  color: #FFF;
+  background-color: #5e557a;
+  /*border: none;*/
+  font-family: monospace;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  margin: 0.5em;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
