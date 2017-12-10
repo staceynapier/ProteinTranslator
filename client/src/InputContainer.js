@@ -12,6 +12,7 @@ class InputContainer extends Component {
   }
 
   handleChange(e) {
+    e.preventDefault()
     this.setState({input: e.target.value})
   }
 

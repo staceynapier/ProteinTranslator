@@ -8,7 +8,26 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      splitString: []
+      splitString: [],
+      library: [
+        ['AUG', 'Methionine'],
+        ['UUU', 'Phenylalanine'],
+        ['UUC', 'Phenylalanine'],
+        ['UUA', 'Leucine'],
+        ['UUG', 'Leucine'],
+        ['UCU', 'Serine'],
+        ['UCG', 'Serine'],
+        ['UCA', 'Serine'],
+        ['UCC', 'Serine'],
+        ['UAU', 'Tyrosine'],
+        ['UAC', 'Tyrosine'],
+        ['UGU', 'Cysteine'],
+        ['UGC', 'Cysteine'],
+        ['UGG', 'Tryptophan'],
+        ['UAA', 'stop'],
+        ['UGA', 'stop'],
+        ['UAG', 'stop']
+      ]
     }
     this.splitInput = this.splitInput.bind(this);
   }
@@ -26,7 +45,7 @@ class App extends Component {
         </section>
 
         <section>
-          <TranslationContainer />
+          <TranslationContainer splitString={this.state.splitString} library={this.state.library}/>
         </section>
       </main>
     );
