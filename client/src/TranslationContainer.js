@@ -3,12 +3,6 @@ import ProteinComponent from './ProteinComponent.js'
 
 class TranslationContainer extends Component {
 
-  constructor(props) {
-    super(props)
-
-  }
-
-
   render() {
     let proteinList = []
 
