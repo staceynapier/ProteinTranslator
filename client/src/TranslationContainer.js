@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProteinComponent from './ProteinComponent.js'
+import ProteinListContainer from './ProteinComponent.js'
 
 class TranslationContainer extends Component {
 
@@ -19,7 +19,7 @@ class TranslationContainer extends Component {
     }
 
     return (
-      <ProteinComponent proteinList={proteinList} />
+      <ProteinListContainer proteinList={proteinList} />
     )
   }
 }
