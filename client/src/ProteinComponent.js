@@ -3,9 +3,13 @@ import React, { Component } from 'react';
 class ProteinComponent extends Component {
 
   render() {
-    console.log(this.props);
+
+    for (var i = 0; i < this.props.proteinList.length; i++) {
+      console.log(this.props.proteinList[i]);
+    }
+
     return(
-      <p>Hello</p>
+      <p>Result</p>
     )
 
   }

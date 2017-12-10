@@ -19,7 +19,7 @@ class TranslationContainer extends Component {
     }
 
     return (
-      <p>{proteinList}</p>
+      <ProteinComponent proteinList={proteinList} />
     )
   }
 }
