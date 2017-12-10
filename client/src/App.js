@@ -30,11 +30,18 @@ class App extends Component {
       ]
     }
     this.splitInput = this.splitInput.bind(this);
+    this.checkForStop = this.checkForStop.bind(this);
+  }
+
+  checkForStop() {
+    const index = this.state.splitString.indexOf('UAA' || 'UGA' || 'UAG')
+    const removed = this.state.splitString.splice(index)
+    this.setState({splitString: this.state.splitString})
   }
 
   splitInput(input) {
     const splitString = input.match(/.{1,3}/g);
-    this.setState({splitString: splitString});
+    this.setState({splitString: splitString}, this.checkForStop);
   }
 
   render() {
