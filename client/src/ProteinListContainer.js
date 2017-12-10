@@ -17,4 +17,4 @@ class ProteinListContainer extends Component {
 
 }
 
-export default ProteinComponent;
+export default ProteinListContainer;

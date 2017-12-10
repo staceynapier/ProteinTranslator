@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProteinListContainer from './ProteinComponent.js'
+import ProteinListContainer from './ProteinListContainer.js'
 
 class TranslationContainer extends Component {
 
