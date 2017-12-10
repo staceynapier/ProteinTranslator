@@ -40,6 +40,9 @@ class App extends Component {
   }
 
   splitInput(input, checkForStop) {
+    if (input.length === 0) {
+      return null
+    }
     const splitString = input.match(/.{1,3}/g);
     this.checkForStop(splitString);
   }
